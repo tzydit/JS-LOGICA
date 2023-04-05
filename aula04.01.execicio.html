@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logica de Programacao</title>
+</head>
+<body>
+    <button onclick="Mais()"></button>
+    <button onclick="Menos()"></button>
+    <button onclick="Multiplicacao()"></button>
+    <button onclick="Divisao()"></button>
+
+    <div id="output"></div>
+
+    <script>
+        n = prompt("Digite um numero: ")
+        n = parseFloat(n)
+
+
+        function Mais(){
+            var i = prompt("Digite outro numero")
+            i = parseFloat(i)
+
+            n += i;
+
+            output.innerHTML = n;
+        }
+
+        function Menos(){
+            var iMenos = prompt("Digite outro numero para diminuir")
+            n -= iMenos;
+            output.innerHTML = n;
+        }
+
+        function Multiplicacao(){
+            var iMultiplicacao = prompt("Digite para multiplicar")
+            n *= iMultiplicacao;
+            output.innerHTML = n;
+        }
+
+        var output = document.querySelector('#output');
+
+
+        
+    </script>
+</body>
+</html>
