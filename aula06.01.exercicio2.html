@@ -7,14 +7,17 @@
     <title>Logica de Programacao</title>
 </head>
 <body>
+
+    <div class="output"></div>
     <script>
-        var dias = new Array ('domingo', 'segunda', 'terca', 'quarta', 'quinta', 'sexta', 'sabado')
+        var arr = new Array(25, 30, 45, 28, 0, 12, 78,64)
 
-        var hoje = new Date()
-        var diaSemana = hoje.getDay()
+        if( arr % 2){
+            ( arr += arr)
+        }
 
-        alert(diaSemana)
-        alert('Bem vindo, hoje e ' + dias[diaSemana])
+        output.InnerHTML = arr
+        var output = document.querySelector('#output');
     </script>
 </body>
 </html>
